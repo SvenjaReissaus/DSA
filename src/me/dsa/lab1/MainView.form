@@ -72,7 +72,7 @@
               <borderPainted value="false"/>
               <focusPainted value="false"/>
               <foreground color="-13748178"/>
-              <icon value="me/dsa/assets/back.png"/>
+              <icon value="back.png"/>
               <text value="Regresar"/>
             </properties>
           </component>

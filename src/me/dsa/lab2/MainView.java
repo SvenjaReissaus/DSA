@@ -1,9 +1,9 @@
 package me.dsa.lab2;
 
-import me.dsa.AbstractMainView;
+import me.dsa.shared.AbstractView;
 import javax.swing.*;
 
-public class MainView extends AbstractMainView {
+public class MainView extends AbstractView {
     private JPanel content;
     private JButton ordenarButton;
     private JButton buscarButton;

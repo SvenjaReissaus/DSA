@@ -39,8 +39,8 @@ public final class AddView extends AbstractView {
             boolean isValid = valid(AddView.class);
             pack();
             if (!isValid) return;
-            result.action(new Student(name.getText(), Integer.parseInt(semesters.getText()), Double.parseDouble(average.getText())));
             dispose();
+            result.action(new Student(name.getText(), Integer.parseInt(semesters.getText()), Double.parseDouble(average.getText())));
         });
     }
 

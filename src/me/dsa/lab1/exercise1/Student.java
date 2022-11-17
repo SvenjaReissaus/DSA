@@ -1,6 +1,6 @@
 package me.dsa.lab1.exercise1;
 
-public class Student {
+public final class Student {
     public Student() {
         this("", 0, 0);
     }

@@ -12,6 +12,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.lang.reflect.Field;
 import java.util.HashMap;
+import java.util.Objects;
 
 public abstract class AbstractView extends JFrame {
 
@@ -29,6 +30,10 @@ public abstract class AbstractView extends JFrame {
         setDefaultCloseOperation(EXIT_ACTION);
         setLocationRelativeTo(null);
     }
+
+    protected Icon editIcon = new ImageIcon(Objects.requireNonNull(getClass().getResource("/edit.png")));
+
+    protected Icon deleteIcon = new ImageIcon(Objects.requireNonNull(getClass().getResource("/delete.png")));
 
     protected void addTooltip(final JButton source, final JLabel target, final String tooltip) {
         final String trimmed = tooltip.trim().subSequence(0, 38) + "...";
